@@ -1,0 +1,3 @@
+https://python-snap7.readthedocs.io/en/latest/
+https://flask.palletsprojects.com/en/stable/installation/
+https://vite.dev/
