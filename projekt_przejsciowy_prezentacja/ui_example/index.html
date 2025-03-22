@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" href="./assets/put-ico.jpg" type="image/x-icon">
+    <title>Admin Dashboard</title>
+    
+</head>
+<body>
+    <nav class="main-navbar">
+        <div class="placeholder-logo">
+            <span>Admin Dashboard</span>
+            <img src="./assets/PP-PUT_logoa_jasne.png" alt="">
+        </div>
+        <nav class="sidebar">
+            <div class="products-div">
+                <img src="./assets/conveyor_belt_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <span>Products</span>
+            </div>
+            <div class="orders-div">
+                <img src="./assets/orders_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <span>Orders</span>
+            </div>
+            <div class="settings-div">
+                <img src="./assets/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <span>Settings</span>
+            </div>
+            <div class="analytics-div">
+                <img src="./assets/monitoring_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <span>Analytics</span>
+            </div>
+            <div class="logout">
+                <img src="./assets/logout_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <span>Log Out</span>
+            </div>
+        </nav>
+    </nav>
+    <div class="main-content">
+        <div class="products-div-main">
+            <span>Products</span>
+            <div>
+                <img src="./assets/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="search-icon">
+                <img src="./assets/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="not-icon">
+            </div>
+        </div>
+        <div class = 'main-content-right'>
+            <div class="main-header">
+                <span>Products list</span>
+                <div class = 'main-header-div'>
+                    <div>
+                        <img src="./assets/filter_alt_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                        <span>Filter</span>
+                    </div>
+                    <div>
+                        <button>+ Add Product</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-sorting">
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <span>Product ID</span>
+                    <img src="./assets/arrow_drop_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </div>
+                <div>
+                    <span>Price</span>
+                    <img src="./assets/arrow_drop_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </div>
+
+                <div>
+                    <span>Stock</span>
+                    <img src="./assets/arrow_drop_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </div>
+
+                <div>
+                    <span>Last Updated</span>
+                    <img src="./assets/arrow_drop_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </div>
+
+                <div>
+                    <span>Action</span>
+                </div>
+            </div>
+            <div class="main-products-container"></div>
+        </div>
+    </div>
+<script src="./fillProducts.js"></script>
+</body>
+</html>
