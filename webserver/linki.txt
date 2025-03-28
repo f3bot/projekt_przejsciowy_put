@@ -1,4 +1,0 @@
-https://python-snap7.readthedocs.io/en/latest/
-https://flask.palletsprojects.com/en/stable/installation/
-https://vite.dev/
-https://www.stercontrol.pl/sterowniki-plc/siemens-simatic-s7-1200/cpu-siemens-simatic-s7-1200/simatic-s7-1200-cpu-1214c-dc-dc-dc-6es7214-1ag40-0xb0
