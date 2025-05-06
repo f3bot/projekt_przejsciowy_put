@@ -1,0 +1,59 @@
+UI:
+	Dashboard Site:
+		Shelf Status
+		Connection Status
+		Total Products in stock
+		Low stock alerts
+		Recent order activity
+		Manually trigger actuators
+		Emergency stop/reset emergency stop
+		System errors
+		Activity Log/event feed		
+	
+	Products site
+		Add Product (either typed or barcode scanner)
+		Export To csv
+		Delete Item
+		Search&Filter by sku,name
+		Bulk Import from CSV
+
+
+	Orders Site
+		Create Order
+		See recent orders
+		Filter&Sirt orders by order-id, date
+		Export to CSV
+	
+	Miscellaneous:
+		Dark Mode
+		responsive design
+		User Auth
+Server:
+
+	Data models:
+		Item: DONE
+		Order: DONE
+		Logs
+		settings?
+	API Routes:
+		DASHBOARD:
+			GET /status/shelf
+			GET /status/connection
+			GET /status/errors
+			GET /items/recent
+			GET /orders/recent
+			GET /logs/activity
+			GET /logs/all		
+
+			POST /actuator/trigger
+			POST /actuator/emergency-stop
+			POST /actuator/reset-emergency-stop
+		PRODUCTS:
+			GET /products
+			POST /products
+			DELETE /products/ID
+			GET /products/export
+		ORDER:
+			GET /orders
+			POST /orders
+			GET /orders/export
