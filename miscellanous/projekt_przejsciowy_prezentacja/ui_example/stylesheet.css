@@ -7,25 +7,25 @@ body {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
     margin: 0;
-    padding: .75%;
+    padding: .8%;
     border-radius: 25px;
 }
 
 .main-navbar {
-    width: 15vw;
+    width: 10vw;
     height: 96vh;
-    border: 1px solid black;
+    border: 1px solid rgb(182, 182, 182);
     border-right: none;
 }
 
 .main-content {
     width: 85vw;
-    border: 1px solid black;
+    border: 1px solid rgb(182, 182, 182);
     background-color: #f5f5f5;
 }
 
 .sidebar {
-    padding-top: 8%;
+    padding-top: 16%;
 }
 
 .sidebar div {
@@ -46,38 +46,39 @@ body {
 }
 
 .placeholder-logo span {
-    font-size: 24px;
+    font-size: 18px;
     color: #23337b;
 }
 
 .placeholder-logo img {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     filter: brightness(0) saturate(100%) invert(46%) sepia(91%) saturate(7496%) hue-rotate(230deg) brightness(95%) contrast(90%);
 }
 
 .sidebar div img {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     filter: brightness(0) saturate(100%) invert(34%) sepia(99%) saturate(0%) hue-rotate(265deg) brightness(97%) contrast(97%);
 }
 
 .sidebar div span {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .products-div-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(170, 170, 170);
     padding: 2%;
     height: 5vh;
-    background-color: #fff !important;
+    background-color: #f5f5f5;
+
 }
 
 .products-div-main span {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 450;
 }
 
@@ -112,7 +113,7 @@ body {
 }
 
 .main-header-div div span {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 button {
@@ -125,8 +126,8 @@ button {
 }
 
 .main-header img {
-    height: 20px;
-    width: 20px;
+    height: 16px;
+    width: 16px;
     filter: brightness(0) saturate(100%) invert(30%) sepia(9%) saturate(1289%) hue-rotate(179deg) brightness(94%) contrast(93%);
 }
 
@@ -164,7 +165,7 @@ button {
 }
 
 .main-content-right {
-    padding: 3% 3% 4.8% 3%;
+    padding: 3% 3% 3% 3%;
     height: 70vh;
 }
 

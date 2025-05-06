@@ -16,6 +16,7 @@ const createProductDiv = (parent) =>{
         <input type = 'checkbox' id = 'input-btn'>
         <span class = 'overview-id'>${generateID()}</span>
         </div>
+        <span class = 'overview-sku'>${generateSKU()}</span>
         <span class = 'overview-price'>${generatePrice()}</span>
         <span class = 'overview-stock'>${getRandomNumber()}</span>
         <span class = 'overview-update'>${getRandomDate()}</span>
@@ -24,6 +25,15 @@ const createProductDiv = (parent) =>{
         parent.appendChild(div);
     
 }
+
+const generateSKU = () => {
+    const characters = 'ABC-DEF-GHIJ-KLMNOPQRSTUVWXYZ0123456789-';
+    let sku = '';
+    for (let i = 0; i < 8; i++) {
+        sku += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return sku;
+};
 
 const generateID = () => {
     return Math.floor(Math.random() * (1319850 - 1000000 + 1)) + 1000000;
