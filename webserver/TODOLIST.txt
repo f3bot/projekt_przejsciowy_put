@@ -49,11 +49,13 @@ Server:
 			POST /actuator/emergency-stop
 			POST /actuator/reset-emergency-stop
 		PRODUCTS:
-			GET /products
-			POST /products
-			DELETE /products/ID
+			GET /products //DONE
+			POST /products //DONE
+			DELETE /products/ID //DONE
 			GET /products/export
 		ORDER:
-			GET /orders
-			POST /orders
+			GET /orders //DONE
+			POST /orders //DONE
+			DELETE /orders/:orderID //DONE
+			TODO:: Populate order_db with orders
 			GET /orders/export

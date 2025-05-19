@@ -1,29 +1,28 @@
-import mongoose from "mongoose";
-const OrderedItemSchema = new mongoose.Schema({
-    item: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Record', // Reference to ItemSchema model
-        required: true
-    },
-    quantity: {
-        type: Number,
-        required: true,
-        min: 1
-    }
-}, { _id: false });
-
+import mongoose from 'mongoose';
 
 const OrderSchema = new mongoose.Schema({
-    orderedItems: {
-        type: [OrderedItemSchema],
-        required: true
-    },
+    items: [{
+        item: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Item',
+            required: true
+        },
+        quantity: {
+            type: Number,
+            required: true,
+            min: 1
+        }
+    }],
     status: {
         type: String,
-        enum: ['pending', 'processing', 'completed'],
+        enum: ['pending', 'processing', 'done'],
         default: 'pending'
     },
     createdAt: {
+        type: Date,
+        default: Date.now
+    },
+    lastUpdated: {
         type: Date,
         default: Date.now
     }

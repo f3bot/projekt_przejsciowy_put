@@ -1,6 +1,6 @@
 import item from "../models/item"
 
-const addItem = async (name: String, sku: String, quantity: number, location: String, category: String) =>{
+const addItem = async (name: String, sku: String, quantity: number, location: [Number, Number], category: String) =>{
     const newItem = new item({
         name: name,
         sku: sku,

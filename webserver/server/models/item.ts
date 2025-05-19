@@ -16,7 +16,7 @@ const ItemSchema = new mongoose.Schema({
         min: 0
     },
     location: {
-        type: String,
+        type: [Number, Number],
         required: true // e.g., "Rack-1-Slot-3" 3 piętra 4 sekcje
     },
     category: {
