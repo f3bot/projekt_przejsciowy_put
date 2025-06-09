@@ -57,5 +57,5 @@ Server:
 			GET /orders //DONE
 			POST /orders //DONE
 			DELETE /orders/:orderID //DONE
-			TODO:: Populate order_db with orders
+			TODO:: Populate order_db with orders //DONE
 			GET /orders/export
